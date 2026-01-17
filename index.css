@@ -796,6 +796,7 @@ align-self: flex-start;
     }
     .container {
         padding: 0;
+        width: 90%;
     }
     .black-btn {
         width: 100%;
@@ -816,8 +817,6 @@ align-self: flex-start;
     .description p{
         font-size: 15px;
     }
-
-
 
     .first-footer-row {
         flex-direction: column;

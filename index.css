@@ -639,6 +639,7 @@ align-self: flex-start;
     font-size: 14px;
     align-items: center;
     padding: 40px 40px 20px 40px;
+    outline: 2px blue solid;
 }
 
 .footer-nav ul{
@@ -694,12 +695,13 @@ align-self: flex-start;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
+    /* padding-left: 32px;
+    padding-right: 32px; */
     margin-left: auto;
     margin-top: 15px;
     width: 480px;
     gap: 20px;
+    outline: 2px red solid;
 }
 
 .email-form * {

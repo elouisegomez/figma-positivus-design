@@ -57,6 +57,10 @@ nav ul li a:hover {
     border: none;
 }
 
+.hamburger img {
+
+}
+
 /* Specific NavBar CSS Rules */
 
 .nav-bar {
@@ -544,7 +548,9 @@ align-self: flex-start;
     border-radius: 20px;
     border-style: solid;
     border-color: #B9FF66;
-    width: 600px; 
+    width: 100%;
+    max-width: 600px;
+    /* width: 600px; */
     justify-self: center;
     /* box-shadow: 0px 15px 0px 0px #B9FF66; */
 }
@@ -867,6 +873,9 @@ align-self: flex-start;
     .contact-us-proposal {
         justify-content: center;
     }
+    #desktop-hero-img {
+        display: none;
+    }
 }
 
 /* Small phones */
@@ -891,13 +900,10 @@ align-self: flex-start;
 
 /* Desktops */
 @media (min-width: 1025px) { 
-    /* .mobile-menu {
+    #mobile-hero-img {
         display: none;
-    }
-    #hero-mobile-img {
-        display: none;
-    } */
-    .container {
-        /* max-width: 1150px; */
+    } 
+    .hamburger {
+     display: none;
     }
 }

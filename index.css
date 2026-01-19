@@ -117,10 +117,10 @@ nav ul li a:hover {
 }
 
 .alt-font {
-    /* font-weight: 900; REMOVED
+    font-weight: 900; 
     padding-left: 5px;
     font-family: 'Bungee Shade';
-    font-size: 50px; */
+    font-size: 50px;
 
 
     /* background-color: #B9FF66;

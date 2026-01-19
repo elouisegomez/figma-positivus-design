@@ -55,9 +55,10 @@ nav ul li a:hover {
 
 .hamburger {
     border: none;
+    background-color: white;
 }
 
-.hamburger img {
+#hamburger-icon {
 
 }
 
@@ -141,7 +142,7 @@ nav ul li a:hover {
 
 .hero-section {
     display: flex;
-    margin-top: 140px;
+    margin-top: min(140px, 6%);
     margin-bottom: 60px;
 }
 
@@ -177,7 +178,7 @@ nav ul li a:hover {
 }
 
 .hero-section h3 {
-    font-size: 3vw;
+    font-size: clamp(1rem, 4vw, 2.5rem);
     font-weight: 500;
     margin: 0;
 }
@@ -875,6 +876,12 @@ align-self: flex-start;
     }
     #desktop-hero-img {
         display: none;
+    }
+    .hero-info {
+        margin: 0;
+    }
+    .hero-section {
+        justify-content: center;
     }
 }
 

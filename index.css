@@ -8,14 +8,20 @@ body {
     font-family: "Space Grotesk";
 }
 
+img {
+    /* display: block; */
+    max-inline-size: 100%;
+    /* height: auto; */
+}
+
 /* MAX-WIDTH CONTAINER */
 
 .container {
     margin: 0 auto;
-    padding-left: min(7em, 6%);
-    padding-right: min(7em, 6%);
-    /* padding: 0 24px;
-    padding-top: 40px; */
+    padding-left: min(22em, 4%);
+    padding-right: min(22em, 4%);
+    /* padding: 0 24px; */
+    padding-top: min(5em, 4%);
     max-width: 90%;
 }
 
@@ -53,14 +59,15 @@ nav ul li a:hover {
 
 /* Specific NavBar CSS Rules */
 
+.nav-bar {
+    display: flex;
+}
+
 #logo {
     /* Pushes everything to >> right */
     margin-right: auto; 
     font-size: 28px;
     font-weight: 500;
-}
-
-#logo a {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -105,10 +112,12 @@ nav ul li a:hover {
 }
 
 .alt-font {
-    font-weight: 900;
+    /* font-weight: 900; REMOVED
     padding-left: 5px;
     font-family: 'Bungee Shade';
-    font-size: 50px;
+    font-size: 50px; */
+
+
     /* background-color: #B9FF66;
     border-radius: 6px; */
     /* color: #072d0b; */
@@ -135,6 +144,7 @@ nav ul li a:hover {
 .hero-section img {
     display: flex;
     justify-content: flex-end;
+    max-width: min(100%, 50%);
 }
 
 .black-btn{
@@ -163,7 +173,7 @@ nav ul li a:hover {
 }
 
 .hero-section h3 {
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: 500;
     margin: 0;
 }
@@ -176,15 +186,23 @@ nav ul li a:hover {
 /* COMPANIES ENDORSMENT SECTION */
 
 .companies-container {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 80px;  */
-    padding: 0px 0px 30px 0px;
-    /* width: 100%; */
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    
+
 }
+
+/* .companies-container img {
+    width: 100%;
+    object-fit: contain;
+  } */
 
 /* SERVICES */
 
@@ -831,7 +849,33 @@ align-self: flex-start;
 } */
 
 @media (max-width: 1024px) { 
-    .menu {
+    .menu-links {
+        display: none;
+    }
+    .companies-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .description {
+        flex-direction: column;
+    }
+    .services-learn-more {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        max-width: 10
+    }
+    .team-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        max-width: 100%;
+    }
+    #contact-image-wrapper {
         display: none;
     }
 }

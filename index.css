@@ -613,13 +613,15 @@ align-self: flex-start;
     background-color:#F3F3F3;
     justify-content: space-evenly;
     align-items: center;
+    /* border: blue 1px dotted; */
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 25px 30px 15px 30px;
+    /* padding: 25px 30px 15px 30px; CAUSING OVERFLOW ISSUES*/ 
+    /* border: 2px red solid; */
 }
 
 .contact-form input[type='text'] {

@@ -15,6 +15,11 @@ img {
     /* height: auto; */
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+
 /* MAX-WIDTH CONTAINER */
 
 .container {

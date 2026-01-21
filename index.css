@@ -55,9 +55,18 @@ nav ul li a:hover {
 /* Menu */
 
 .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;       
     border: none;
-    background-color: white;
+    background: none;
 }
+
+.hamburger img {
+    display: block;
+}
+  
 
 #hamburger-icon {
 
@@ -122,22 +131,51 @@ nav ul li a:hover {
     padding-left: 5px;
     font-family: 'Bungee Shade';
     font-size: 50px;
-
-
-    /* background-color: #B9FF66;
-    border-radius: 6px; */
-    /* color: #072d0b; */
-    /* background-image: linear-gradient(45deg, #6EF57C , #B4FF96 50%, #7FFF08 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;  */
 }
 
 /* .alt-font2 {
     font-weight: 800;
     border-radius: 2px;
 } */
+
+/* SLIDE IN NAVBAR */
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #e9e8e8;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color:#B9FF66;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 /* HERO */
 

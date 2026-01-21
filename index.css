@@ -670,7 +670,6 @@ align-self: flex-start;
     font-size: 14px;
     align-items: center;
     padding: 40px 40px 20px 40px;
-    outline: 2px blue solid;
 }
 
 .footer-nav ul{
@@ -727,13 +726,12 @@ align-self: flex-start;
     display: flex;
     align-items: center;
     gap: 10px;
-    /* padding-left: 32px;
-    padding-right: 32px; */
+    padding-left: 2em;
+    padding-right: 2em;
     margin-left: auto;
     margin-top: 15px;
-    width: 480px;
+    /* width: 30rem; */
     gap: 20px;
-    outline: 2px red solid;
 }
 
 .email-form * {
@@ -887,9 +885,6 @@ align-self: flex-start;
     .contact-us-proposal {
         justify-content: center;
     }
-    /* .footer * {
-        flex-direction: column;
-    } */
     .first-footer-row {
         justify-self: center;
         flex-direction: column;
@@ -908,7 +903,12 @@ align-self: flex-start;
         text-align: center;
     }
     .email-form {
-
+        margin: 0;
+        width: 100%;
+        /* max-width: 30rem; */
+        align-items: stretch;
+        flex-direction: column;
+        padding: 2em 2em 2em 2em;
     }
     .copyright-statement {
         flex-direction: column;

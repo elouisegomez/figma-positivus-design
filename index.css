@@ -249,9 +249,6 @@ nav ul li a:hover {
 /* COMPANIES ENDORSMENT SECTION */
 
 .companies-container {
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
@@ -273,7 +270,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-top: 6.25rem;
+    /* margin-top: 6.25rem; */
 }
 
 .green-title {
@@ -850,67 +847,7 @@ align-self: flex-start;
 
 /* Adjust Navbar */
 /* @media (max-width: 1024px) { 
-    .menu {
-        display: none;
-    }
-    .hero-section {
-        flex-direction: column;
-    }
-    .mobile-menu {
-        display: flex;
-    }
-    .mobile-menu button {
-        margin-left: auto;
-    }
-    .hamburger {
-        background-color: white;
-    }
-    #mobile-logo a{
-        display: flex;
-        align-items: center;
-    }
-    .hero-section {
-        margin: 0;
-    }
-    #hero-statement {
-        font-size: 35px;
-    }
-    .alt-font {
-        font-size: 38px;
-    }
-    #hero-desktop-img {
-        display: none;
-    }
-    .container {
-        padding: 0;
-        width: 90%;
-    }
-    .black-btn {
-        width: 100%;
-    }
-    .companies-container {
-        display: grid;
-        padding-top: 40px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        max-width: 100%;
-    }
-    .description {
-        flex-direction: column;
-        gap: 0px;
-    }
-    .description p{
-        font-size: 15px;
-    }
-
-    .first-footer-row {
-        flex-direction: column;
-    }
-    .second-row-footer {
-        flex-direction: column;
-    }
+    
 } */
 
 @media (max-width: 1024px) { 
@@ -920,9 +857,10 @@ align-self: flex-start;
     .companies-container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
+        grid-column-gap: 15px;
         grid-row-gap: 30px;
     }
+
     .description {
         flex-direction: column;
     }
@@ -945,6 +883,8 @@ align-self: flex-start;
     .contact-wrapper {
         display: none;
     }
+
+
 }
 
 /* Small phones */

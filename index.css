@@ -179,9 +179,10 @@ nav ul li a:hover {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  right: 1.125rem;
+  font-size: 2.25rem;
+  margin-top: 0.328rem;
+  margin-left: 3.125rem;
 }
 
 /* HERO */
@@ -272,6 +273,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-top: 6.25rem;
 }
 
 .green-title {
@@ -939,9 +941,6 @@ align-self: flex-start;
     .contact-wrapper {
         display: none;
     }
-    .black-btn {
-        /* font-size: 100px; */
-    }
 }
 
 /* Small phones */
@@ -974,6 +973,15 @@ align-self: flex-start;
     }
     .accordion-item {
         border-radius: 30px;
+    }
+    .services-learn-more {
+        grid-row-gap: 30px;
+    }
+    .working-process {
+        gap: 15px;
+    }
+    .accordion-item {
+        box-shadow: 0px 5px 0px 0px black;
     }
 }
 

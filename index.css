@@ -478,6 +478,10 @@ nav ul li a:hover {
     font-size: 22px;
 }
 
+.accordion button { 
+
+}
+
 .accordion:after {
     content: '\02795'; 
     /* Unicode character for "plus" sign (+) */
@@ -932,40 +936,11 @@ align-self: flex-start;
     .contact-us-proposal {
         justify-content: center;
     }
-    .first-footer-row {
-        justify-self: center;
-        flex-direction: column;
-        gap: 0.313em;
-    }
-    .first-footer-row *{
-        justify-self: center;
-        flex-direction: column;
-    }
-    .second-row-footer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-contact-info {
-        justify-content: center;
-        text-align: center;
-    }
-    .email-form {
-        margin: 0;
-        width: 100%;
-        /* max-width: 30rem; */
-        align-items: stretch;
-        flex-direction: column;
-        padding: 2em 2em 2em 2em;
-    }
-    .copyright-statement {
-        flex-direction: column;
-        justify-content: center;
-    } 
-    .case-studies-info p {
-        display: none;
-    }
     .contact-wrapper {
         display: none;
+    }
+    .black-btn {
+        /* font-size: 100px; */
     }
 }
 
@@ -994,7 +969,7 @@ align-self: flex-start;
     .black-btn {
         width: 100%;
         height: 60px;
-        font-size: clamp(0.6rem, 3vw, 1.5rem);
+        font-size: clamp(1.125rem, 3vw, 1.5rem);
         border-radius: 38px;
     }
     .accordion-item {
@@ -1016,5 +991,39 @@ align-self: flex-start;
     } 
     .hamburger {
      display: none;
+    }
+}
+
+@media (max-width: 819px) {
+    .first-footer-row {
+        justify-self: center;
+        flex-direction: column;
+        gap: 0.313em;
+    }
+    .first-footer-row *{
+        justify-self: center;
+        flex-direction: column;
+    }
+    .second-row-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-contact-info {
+        justify-content: center;
+        text-align: center;
+    }
+    .email-form {
+        margin: 0;
+        width: 100%;
+        align-items: stretch;
+        flex-direction: column;
+        padding: 2em 2em 2em 2em;
+    }
+    .copyright-statement {
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .case-studies-info p {
+        display: none;
     }
 }

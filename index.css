@@ -1007,16 +1007,22 @@ align-self: flex-start;
 }
 
 @media (max-width: 819px) {
-    .first-footer-row {
-        justify-self: center;
+    .first-footer-row { 
         flex-direction: column;
         gap: 0.313em;
     }
-    .first-footer-row *{
+    .first-footer-row * {
+        margin-top: .25rem;
+        margin-bottom: .25rem;
         justify-self: center;
         flex-direction: column;
+        text-align: center;
+    }
+    .footer-nav ul{
+        gap: 0.5rem;
     }
     .second-row-footer {
+        margin-top: 0.25rem;
         flex-direction: column;
         align-items: center;
     }
@@ -1024,18 +1030,28 @@ align-self: flex-start;
         justify-content: center;
         text-align: center;
     }
+    #contact-us-highlight {
+        align-self: center;
+    }
     .email-form {
         margin: 0;
         width: 100%;
         align-items: stretch;
         flex-direction: column;
         padding: 2em 2em 2em 2em;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
     .copyright-statement {
         flex-direction: column;
         justify-content: center;
+        gap: 0px;
     } 
     .case-studies-info p {
         display: none;
+    }
+    .footer-contact-info {
+        margin-bottom: 1.5rem;
+        order: 1;
     }
 }

@@ -713,6 +713,69 @@ align-self: flex-start;
     font-size: 14px;
 }
 
+/* RADIO BUTTON STYLING */
+
+.radio-options {
+    display: flex;
+    gap: 50px;
+}
+
+.radio-container {
+    /* display: block; */
+    position: relative;
+    padding-left: 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #FFF;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+.radio-container input:hover  ~ .checkmark {
+    background-color: #eee;
+}
+
+.radio-container input:checked ~ .checkmark{
+    background-color: white;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 5.5px;
+    left: 5.5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #B9FF66;
+}
+
+
+
 /* FOOTER */
 
 .footer {
@@ -863,6 +926,14 @@ align-self: flex-start;
 
     .description {
         flex-direction: column;
+        gap: 0px;
+    }
+    .description p {
+        padding: 0px;
+        margin: 0px;
+    }
+    .green-title {
+        margin: 0px;
     }
     .team-grid {
         grid-template-columns: 1fr;

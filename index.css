@@ -478,10 +478,14 @@ nav ul li a:hover {
     outline: none;
     transition: 0.4s;
     font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .accordion button { 
-
+    /* font-size: clamp(1rem, 4vw, 5rem); */
+    /* font-size: 10rem; */
 }
 
 .accordion:after {
@@ -490,7 +494,7 @@ nav ul li a:hover {
     font-size: 13px;
     /* color: #777; */
     float: right;
-    margin-left: 5px;
+    margin-left: auto;
   }
   
   .active:after {
